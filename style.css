@@ -1,0 +1,383 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f4f8; /* Softer background color */
+  color: #000; /* Black text */
+  overflow-x: hidden;
+}
+
+/* Container */
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: #34495e; /* Dark grey-blue */
+  color: #fff; /* White text */
+  padding: 30px 0; /* More padding to make header feel less cramped */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 15px; /* Increased margin for better spacing */
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold; /* Bolder text */
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #16a085; /* Hover color */
+  text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+  background: linear-gradient(135deg, #16a085, #2980b9); /* Updated gradient */
+  color: #fff;
+  padding: 120px 0; /* More padding for a bigger hero section */
+  text-align: center;
+  animation: fadeIn 2s ease-out;
+}
+
+#hero h2 {
+  font-size: 3.5rem; /* Larger text for more impact */
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  font-weight: bold; /* Bold text */
+  animation: slideInFromTop 1.5s ease-out;
+}
+
+#hero p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  font-weight: bold; /* Bolder text */
+  animation: slideInFromBottom 1.5s ease-out;
+}
+
+/* Call to Action Button */
+.cta-button {
+  background-color: #e67e22; /* Updated button color */
+  color: #fff;
+  padding: 18px 36px; /* Slightly larger padding for a better button look */
+  border-radius: 30px;
+  font-size: 1.2rem; /* Slightly bigger font size for better readability */
+  font-weight: bold; /* Bolder text */
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background-color: #d35400; /* Darker hover effect */
+  transform: scale(1.05);
+}
+
+/* About Us Section */
+/* About Us Section */
+#about {
+  background-color: #fff;
+  padding: 60px 0;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 2s ease-out;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Ensures that content wraps on smaller screens */
+  gap: 20px;
+}
+
+.about-text {
+  width: 50%;
+  text-align: left;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.8;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.05); /* Image zoom effect on hover */
+}
+
+/* Optional: To make it more responsive on smaller screens */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .about-image {
+    width: 100%;
+  }
+}
+
+/* Benefits Page */
+#benefits {
+  padding: 60px 0;
+  background-color: #f4f9fb;
+}
+
+.benefits-image img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.benefits-text {
+  text-align: left;
+}
+
+.benefits-text h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.benefits-text h3 {
+  font-size: 1.8rem;
+  color: #2980b9;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.benefits-text ul {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-left: 20px;
+}
+
+.benefits-text ul li {
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #34495e;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1rem;
+}
+
+
+/* Services Section */
+#services {
+  background-color: #f4f9fb;
+  padding: 100px 0; /* Larger section for more balance */
+  text-align: center;
+}
+
+#services h2 {
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  color: #2c3e50;
+  font-weight: bold; /* Bold text */
+  animation: fadeIn 2s ease-out;
+}
+
+.service-item {
+  display: inline-block;
+  width: 30%;
+  padding: 25px;
+  margin: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 2s ease-out;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-item h3 {
+  font-size: 1.7rem;
+  margin-bottom: 15px;
+  color: #2980b9; /* Updated heading color */
+  font-weight: bold; /* Bolder text */
+}
+
+.service-item p {
+  font-size: 1.1rem;
+  color: #000; /* Black text */
+  font-weight: bold; /* Bolder text */
+}
+
+/* Contact Section */
+#contact {
+  background-color: #fff;
+  padding: 80px 0; /* More padding for balance */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  font-weight: bold; /* Bolder text */
+}
+
+form label {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: bold; /* Bolder text */
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 18px; /* Slightly larger padding */
+  margin-bottom: 25px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  color: #333;
+  background-color: #ecf0f1; /* Soft background for text areas */
+  transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #16a085;
+  outline: none;
+}
+
+form button {
+  background-color: #16a085;
+  color: #fff;
+  padding: 18px 36px; /* Larger padding for button */
+  border: none;
+  border-radius: 30px;
+  font-size: 1.2rem; /* Slightly larger font size */
+  font-weight: bold; /* Bolder text */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background-color: #34495e;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+  position: relative;
+}
+
+footer p {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  font-weight: bold; /* Bolder text */
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #16a085;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
